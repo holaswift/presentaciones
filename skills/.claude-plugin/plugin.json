@@ -1,0 +1,21 @@
+{
+  "name": "presentaciones",
+  "description": "Presentaciones .pptx con la marca hola Swift (Keynote, PowerPoint y Google Slides): presentación mensual, plantilla para ponentes, pantallas del encuentro, recap y patrocinio.",
+  "author": {
+    "name": "hola Swift",
+    "url": "https://holaswift.com"
+  },
+  "homepage": "https://holaswift.com/presentaciones/",
+  "repository": "https://github.com/holaswift/presentaciones",
+  "keywords": [
+    "hola Swift",
+    "presentaciones",
+    "pptx",
+    "keynote",
+    "swift"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "skills": [
+    "./holaswift-presentaciones"
+  ]
+}
