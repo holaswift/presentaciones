@@ -1,0 +1,17 @@
+{
+  "name": "holaswift",
+  "owner": {
+    "name": "hola Swift",
+    "url": "https://holaswift.com"
+  },
+  "metadata": {
+    "description": "Skills de hola Swift, la comunidad de Swift en español."
+  },
+  "plugins": [
+    {
+      "name": "presentaciones",
+      "source": "./skills",
+      "description": "Presentaciones .pptx con la marca hola Swift: charla mensual, plantilla para ponentes, pantallas del encuentro, recap y patrocinio."
+    }
+  ]
+}
