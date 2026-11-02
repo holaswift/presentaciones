@@ -1,0 +1,36 @@
+name: Descargas
+
+# En cada cambio de main regenera la skill y sube a la release "descargas" lo que enlaza
+# https://holaswift.com/presentaciones:
+#   holaswift-presentaciones.skill · holaswift-fuentes.zip · plantilla-ponentes.pptx · charla-ejemplo-swift-testing.pptx
+# No cambiéis estos nombres sin cambiar también los enlaces de la página.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  descargas:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar los archivos
+        run: |
+          ./empaquetar.sh
+          mkdir -p _sub
+          cp holaswift-presentaciones.skill _sub/
+          zip -qr -X _sub/holaswift-fuentes.zip fuentes -x '*.DS_Store'
+          cp "ejemplos/Plantilla para ponentes invitados.pptx" _sub/plantilla-ponentes.pptx
+          cp "ejemplos/Charla de ejemplo - Swift Testing.pptx" _sub/charla-ejemplo-swift-testing.pptx
+          ls -lh _sub
+      - name: Subir a la release "descargas"
+        run: |
+          gh release view descargas >/dev/null 2>&1 \
+            || gh release create descargas --title "Descargas" --notes "Skill, fuentes y plantillas. Se regeneran solos en cada cambio de main: no los subáis a mano."
+          gh release upload descargas _sub/* --clobber

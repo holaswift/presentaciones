@@ -1,0 +1,11 @@
+{"titulo":"Plantilla para ponentes · hola Swift","tema":"claro","contenido":"charla","diapositivas":[
+{"tipo":"hola","palabra":"[Tema]","titulo":"[Título de tu charla]","texto":"Charla mensual de hola Swift · [Fecha]","tema":"color","notas":"Portada. Cambia [Tema] por una o dos palabras (SwiftUI, Testing, Concurrencia): sale enorme debajo del hola."},
+{"tipo":"persona","etiqueta":"Ponente","nombre":"[Tu nombre]","rol":"[Rol · Empresa · Ciudad]","frase":"[Una frase sobre ti o sobre la charla, opcional]","notas":"Arrastra tu foto encima del recuadro (o bórralo y deja la inicial)."},
+{"tipo":"frase","antetitulo":"La idea","frase":"[La idea de tu charla en una frase]","tema":"oscuro","notas":"Si el público solo recordara una frase, ¿cuál sería?"},
+{"tipo":"texto","titulo":"[Lo que vamos a ver]","puntos":["[Primer punto, una línea]","[Segundo punto]","[Tercer punto]"],"notas":"Hasta 5 puntos cortos. Si necesitas más, parte la diapositiva en dos."},
+{"tipo":"codigo","titulo":"[Una frase que explique el código]","archivo":"[Archivo.swift]","codigo":"// [Tu código: hasta 12 líneas]\nlet saludo = \"hola Swift!\"\nprint(saludo)","notas":"Enseña solo el fragmento que importa. Si una línea es muy larga, se sale por la derecha."},
+{"tipo":"imagen","titulo":"[Captura o demo]","pie":"[Pie opcional]","notas":"Arrastra tu captura encima del recuadro."},
+{"tipo":"tarjetas","titulo":"[Tres ideas]","tarjetas":[{"titulo":"[Idea 1]","texto":"[Una o dos frases]"},{"titulo":"[Idea 2]","texto":"[Una o dos frases]"},{"titulo":"[Idea 3]","texto":"[Una o dos frases]"}]},
+{"tipo":"pregunta","pregunta":"¿Preguntas?","texto":"[Tu usuario en redes o tu web]","tema":"color","color":"rosa"},
+{"tipo":"cierre","tema":"oscuro","notas":"Gracias. Esta diapositiva cierra todas las charlas de hola Swift: no la quites."}
+]}
